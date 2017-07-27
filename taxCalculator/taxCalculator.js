@@ -32,9 +32,10 @@ function calculateSalesTax(salesData, taxRates) {
 
     // Get name, province and sales of each data point
     name        = salesData[i].name
+
     province    = salesData[i].province
     sales       = salesData[i].sales
-
+console.log(salesTaxRates[province])
     // Calculate the total sales and the tax based on their province tax rate
     var totalSales = 0;
     sales.forEach(function (sales) {
